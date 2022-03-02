@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - dev
-  workflow_dispatch:
-    inputs:
-      username:
-        required: true
-        type: string
 
 jobs:
   call-workflow:
