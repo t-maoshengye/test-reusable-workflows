@@ -1,0 +1,12 @@
+name: 'Hello World'               # action 名
+description: 'Greet someone'      # 簡単な説明
+inputs:
+  who-to-greet:                   # id of input    
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+runs:
+  using: 'docker'                 # Dockerの利用を名詩
+  image: 'Dockerfile'             # Dockerfileを利用してイメージを作成
+  args:                           # docker run に渡すパラメータ
+    - $
