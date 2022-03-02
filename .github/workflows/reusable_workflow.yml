@@ -6,9 +6,6 @@ on:
       username:
         required: true
         type: string
-    secrets:
-      token:
-        required: true
 
 jobs:
   example_job:
@@ -18,4 +15,3 @@ jobs:
       - uses: ./.github/actions/my-action@v1
         with:
           username: ${{ inputs.username }}
-          token: ${{ secrets.token }}      
