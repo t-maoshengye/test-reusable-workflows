@@ -1,5 +1,7 @@
 name: Call a reusable workflow
 
+name: Call reusable workflow example
+
 on:
   push:
     branches:
